@@ -1,0 +1,13 @@
+@import "~bootstrap/scss/functions";
+@import "./helpers/_variables";
+@import "~bootstrap/scss/bootstrap";
+
+@import "./dashboard";
+@import "./productlist";
+
+@import "./dessert/_common";
+@import "./dessert/_index";
+@import "./dessert/_login";
+@import "./dessert/_product";
+@import "./dessert/_cart";
+@import "./dessert/_checkout";

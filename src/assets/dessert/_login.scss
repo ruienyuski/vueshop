@@ -1,0 +1,116 @@
+/*login.html*/
+
+.login_width {
+  padding:0;
+  overflow:hidden;
+}
+.login_bg {
+  background-color: $MainColor;
+  border:0;
+  border-radius: 0;
+  h5.card-title {
+    line-height: 2.5;
+    font-size: $fz_ml;
+    color:$ForthColor;
+  }
+  .input_icon {
+    margin-bottom: 1.5em;
+  }
+  input {
+    padding: 15px 100px 15px 50px;
+    border: none;
+  }
+}
+.custom-checkbox .custom-control-label::before {
+  border-radius: 0;
+}
+
+.checkbox_style {
+  color:$SecondColor;
+  text-align: left;
+}
+
+
+
+.social_bg {
+  background-color: $ForthColor;
+  border:0;
+  border-radius: 0;
+  margin-top: 20px;
+
+  h5.card-title {
+    color:$OtherColor;
+    font-weight: 100;
+    font-size: $fz_m;
+    line-height: 2.3;
+  }
+  .social_btn {
+    margin: 1.5em 0 1em 0;
+  }
+  .btn-block {
+    width: 80%;
+  }
+  .btn_bg {
+    margin-bottom: 1em;
+    color: #212529;
+    background-color: $SecondColor;
+    border-color: $SecondColor;
+    border-radius: 0;
+    height: calc(2.875rem + 2px);
+    &:hover {
+      background-color: $MainColor;
+    }
+  }
+  .btn_bg:not(:disabled):not(.disabled).active, .btn_bg:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+    color: #212529;
+    background-color: $SecondColor;
+    border-color: $SecondColor;
+  }
+}
+.social_icon {
+  width: 100px;
+  height: calc(1.8rem + 2px);
+}
+
+@media (max-width: 480px) {
+  .login_bg .card-body {
+    padding:0;
+  }
+  .mobile_social_btn_bg {
+    background-color: $ForthColor;
+    padding: 25px 0;
+  }
+  .btn_bg {
+    width: 105px;
+    height: 56px;
+    border-radius: 0;
+    background-color: $SecondColor;
+    border-color: $SecondColor;
+    margin: 0 1px ;
+    &:hover {
+      background-color: $MainColor;
+    }
+  }
+  .social_icon {
+    width: 100%;
+    height: auto;
+  }
+  .login_bg {
+    input {
+      padding: 15px 50px 15px 50px;
+    }
+    .input_icon {
+      margin-bottom:1em ;
+    }
+    .input_icon_mb {
+      margin-bottom: 0;
+    }
+    .mobile_login_bg {
+      padding: 20px 0 0 0;
+    }
+  }
+  .checkbox_style {
+    padding: 0 0 15px 0.6rem;
+  }
+
+ }

@@ -1,0 +1,257 @@
+/*checkout-1.html*/
+
+.check_bg {
+  background-color: $MainColor;
+  color: $ForthColor;
+  border:0;
+  border-radius: 0;
+  .card-head {
+    line-height: 2.5;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    margin: 20px auto;
+  }
+  .card-body {
+    text-align: left;
+    padding: 0 40px;
+    label {
+      font-size: $fz_sm;
+    }
+  }
+}
+.check_btn_bg {
+  padding: 15px;
+}
+/*進度條 start*/
+.progress {
+  margin: 0 auto;
+  width: 12rem;
+  height: auto;
+  background: $MainColor;
+  border-bottom: 1px solid $ForthColor;
+ }
+
+.progress > .step {
+  width: 20px;
+  height: 20px;
+  background: $MainColor;
+  border: 1px solid $ForthColor;
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center; 
+}
+
+.progress > .step:nth-child(2) {
+  margin-left: 5.5rem; }
+
+.progress > .step:nth-child(3) {
+  margin-left: 11rem; }
+
+
+
+.progress > .in {
+  border: 1px solid $ForthColor; 
+}
+
+.progress > .in:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: $ForthColor;
+  display: block;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center; 
+}
+
+
+.progress > .in:first-child:before {
+  display: none; 
+}
+
+.progress > .in.done:after {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  content: "\f00c";
+  width: 20px;
+  height: 20px;
+  color:$MainColor;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center; 
+  align-items: center;
+}
+
+  /*進度條 end*/
+
+  .check_order_width {
+   border:1px solid  $ForthColor;
+   margin-bottom: 20px;
+   margin-left: 20px;
+   color:$OtherColor;
+  }
+
+  .check_product_item{
+    color:$OtherColor;
+    display:block;
+    cursor: pointer;
+    .product_price {
+      color:$OtherColor;
+    }
+  }
+  .check_title {
+    font-size: $fz_m;
+    font-weight: bold;
+    color:$OtherColor;
+    background-color: $ForthColor;
+  }
+  .checktitle {
+    font-size: $fz_ml;
+    color:$ForthColor;
+  }
+
+  .check_product_img {
+    max-width: 120px;
+    height: 80px;
+    display:block;
+    cursor: pointer;
+  }
+  .check_product_item .product_price {
+      font-size: $fz_sm;
+  }
+  @media (max-width: 768px) {
+    .check_order_width {
+      border:1px solid  $ForthColor;
+      margin-top: 20px;
+      margin-left: 0px;
+      color:$OtherColor;
+     }
+  }
+
+  @media (max-width: 480px) {
+    .check_bg .card-body {
+      padding: 0 20px;
+  }
+  .checktitle {
+    text-align: left;
+    padding: 0 20px;
+  }
+    .progress {
+      width: 7rem;
+    }
+    .progress > .step:nth-child(2) {
+      margin-left: 3.5rem; }
+    
+    .progress > .step:nth-child(3) {
+      margin-left: 7rem; }
+    
+   }
+
+   /*checkout-2.html*/
+
+   .input_icon2 i{
+    position: absolute;
+    top: calc(50% - 0.5em);/* Keep icon in center of input, regardless of the input height */
+    right:15px;
+    color: $MainColor;
+  }
+ /*checkout-3.html*/
+  .switch {
+    display:flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 15px;
+    .item {
+      width: 190px;
+      height: 56px;
+      border-radius: 0;
+      background: transparent;
+      border-color:$ForthColor;
+      border: 1px solid $ForthColor;
+      text-align: center;
+      line-height: 56px;
+      font-size: $fz_sm;
+    }
+    .item a{
+      color: $ForthColor;
+      text-decoration: none;
+    }
+    .item.active ,.item.active a{
+      background:$ForthColor;
+      color:$MainColor;
+    }
+  }
+
+  /*checkout_success.html*/
+  .header2 {
+    display: flex;
+    justify-content: center;
+  }
+  .fin_text {
+    width: 65%;
+  }
+  .progress_color2 {
+    border-bottom: 1px solid $MainColor;
+  }
+  .progress > .done_color2 {
+   background-color: $MainColor;
+   border:1px solid $MainColor;
+   color:$ForthColor;
+  }
+  .progress > .done_color2:after {
+    background-color: $MainColor;
+  }
+
+  .progress > .in.done.done_color2:after {
+    color:$ForthColor;
+  }
+
+  .success_btn_bg {
+    width: 300px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    margin: 0 auto;
+    a {
+      color: $MainColor;
+      text-decoration: none;
+    }
+  }
+  .mobile_success_btn_bg {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+
+    .progress_color2 {
+      width: 7.5rem;
+    }
+    .header2_mobile {
+      height: 0;
+      padding: 30% 0;
+    }
+    .fin_text {
+      width: 50%;
+    }
+    .mobile_success_btn_bg {
+      width: 100%;
+      height: 65px;
+      line-height: 65px;
+      text-align: center;
+      margin: 0 auto;
+      background-color: $ThirdColor;
+      color: $MainColor;
+      font-size: $fz_m;
+      font-weight: bold;
+      display:block;
+      cursor: pointer;
+    }
+  }

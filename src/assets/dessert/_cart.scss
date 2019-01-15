@@ -1,0 +1,163 @@
+/*cart.html*/
+
+
+.cart_title {
+  font-size: $fz_m;
+  font-weight: bold;
+  color:$MainColor;
+  background-color: $ForthColor;
+}
+
+.cart_list {
+  padding:0;
+}
+.cart_product_img {
+  max-width: 110px;
+  height: 110px;
+  display:block;
+  cursor: pointer;
+}
+.cart_product_item  .product_title {
+  font-size: $fz_sm;
+}
+.cart_product_item {
+  color:$MainColor;
+  display:block;
+  cursor: pointer;
+}
+
+.cart_product_number {
+ .btn {
+   width: 48px;
+   height: 48px;
+   border-radius: 0;
+ }
+ .input_size {
+  height: calc(2.875rem + 2px);
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+ }
+
+}
+.product_price {
+  font-size: $fz_sm;
+  color:$MainColor;
+  font-weight: bold;
+}
+
+.mobile_product_price {
+  display: none;
+}
+
+  .cart_delete_icon{
+    display:block;
+    cursor: pointer;
+  }
+
+
+.order_bg {
+  background-color: $MainColor;
+  border:0;
+  border-radius: 0;
+  .card-body {
+    padding-bottom: 0px;
+  }
+  .card-head {
+    line-height: 2.5;
+    font-size: $fz_m;
+    color:$ForthColor;
+    font-weight: bold;
+    border-bottom:1px solid $ForthColor;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .order_sale {
+    color:darken($ThirdColor,20%);
+  }
+  .border_bottom {
+    border-bottom:1px solid $SecondColor;
+    margin-bottom: 10px;
+  }
+  .table {
+    color:$ForthColor;
+
+    td {
+      padding: 5px 0.75em;
+    }
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .cart_width {
+    padding:0;
+  }
+
+  .cart_list {
+    padding: 0 15px;
+  }
+
+  .cart_product_img {
+    max-width: 157px;
+    height: 106px;
+  }
+  .cart_product_number {
+    .btn {
+      width: 40px;
+      height: 40px;
+    }
+    .input_size {
+     height: calc(2.4rem + 2px);
+     padding: .5rem;
+     font-size: 1.25rem;
+     line-height: 1.5;
+    }
+   
+   }
+
+   .mobile_product_price {
+     display:block;
+     text-align: right;
+     font-size: $fz_sm;
+     color:$MainColor;
+     font-weight: bold;
+   }
+
+  // .cart_delete_icon{
+  //   display:none;
+  // }
+  .product_price {
+    display:none;
+  }
+  
+  .order_bg {
+    border:0;
+    background-color: $SecondColor;
+    .card-head {
+      background-color: $ForthColor;
+      color:$MainColor;
+      width: 100%;
+      margin: 0 auto;
+      border:0;
+    }
+    .card-body {
+      background-color: $SecondColor;
+      width: 93%;
+      margin: 0 auto;
+    }
+    .order_sale {
+      color:#dc3545;
+    }
+
+   .table {
+      color: $MainColor;
+    }
+    .card-footer {
+      padding: .75rem 0;
+    }
+
+  }
+
+}
