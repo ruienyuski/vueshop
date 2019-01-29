@@ -102,7 +102,7 @@
   .check_product_item{
     color:$OtherColor;
     display:block;
-    cursor: pointer;
+    
     .product_price {
       color:$OtherColor;
     }
@@ -122,7 +122,7 @@
     max-width: 120px;
     height: 80px;
     display:block;
-    cursor: pointer;
+    
   }
   .check_product_item .product_price {
       font-size: $fz_sm;
@@ -167,7 +167,7 @@
   .switch {
     display:flex;
     justify-content: space-between;
-    cursor: pointer;
+    
     margin-bottom: 15px;
     .item {
       width: 190px;
@@ -252,6 +252,6 @@
       font-size: $fz_m;
       font-weight: bold;
       display:block;
-      cursor: pointer;
+      
     }
   }

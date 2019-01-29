@@ -2,13 +2,13 @@
 
 /*nav menu*/
 .Logo {
-  background-image: url(/static/images/logo_img/logo-all-dark.svg);
+  background-image: url(./assets/static/images/logo_img/logo-all-dark.svg);
   width: 250px;
   height: 45px;
   text-indent: -99999px;
   background-repeat: no-repeat;
   display:block;
-  cursor: pointer;
+  
 }
 .navbar-light .hamger{
   color:$MainColor;
@@ -44,7 +44,6 @@
   width: 100%;
   height: 496px;
   display:block;
-  cursor: pointer;
 }
 
 .salemenu{
@@ -78,19 +77,19 @@
   }
 }
 .blur_img01:after{
-  background-image: url(/static/images/home_09.jpg);
+  background-image: url(https://bit.ly/2R5tqwD);
   background-size:cover;
   background-position:center center;
   filter: blur(3px);
 }
 .blur_img02:after{
-  background-image: url(/static/images/home_08.jpg);
+  background-image: url(https://bit.ly/2Dwoxd7);
   background-size:cover;
   background-position:center center;
   filter: blur(3px);
 }
 .blur_img03:after{
-  background-image: url(/static/images/home_07.jpg);
+  background-image: url(https://bit.ly/2OUteif);
   background-size:cover;
   background-position:center center;
   filter: blur(3px);
@@ -101,8 +100,17 @@
   background-color: $MainColor;
   writing-mode: vertical-lr;
   // padding: 80px 125px;
+  display:inline-block;
   padding:5rem 8rem;
   opacity: 0.8;
+
+  &:hover {
+    background-color: $ThirdColor;
+    span {
+    color:$MainColor;
+    font-weight: bold;
+    }
+  }
 
   span{
     font-size: $fz_m;
@@ -115,13 +123,7 @@
   border-left: 1px solid $SecondColor;
   border-right: 1px solid $SecondColor;
 }
-.salemenu_item_focus{
-  background-color: $ThirdColor;
-  span {
-    color:$MainColor;
-    font-weight: bold;
-  }
-}
+
 
 /*contain*/
 .content {
@@ -186,7 +188,7 @@
   width: 100%;
   height: 315px;
   display:block;
-  cursor: pointer;
+  
 }
 .product_card_product_txt {
   color:$MainColor;
@@ -204,7 +206,7 @@
   font-weight: bold;
   font-size: $fz_s;
   display:block;
-  cursor: pointer;
+  
 
 }
 
@@ -217,7 +219,7 @@
   line-height: 1.3;
   left:20px;
   top:0;
-  cursor: pointer;
+  
 }
 .product_today {
   background-color: $MainColor;
@@ -233,7 +235,7 @@
   // color: $MainColor;
   right: 20px;
   top:20px;
-  cursor: pointer;
+  
 }
 .home_sale {
   display: flex;
@@ -266,7 +268,8 @@
 
 .input_icon i{
   position: absolute;
-  top: calc(50% - 0.5em);/* Keep icon in center of input, regardless of the input height */
+  // top: calc(50% - 0.5em);/* Keep icon in center of input, regardless of the input height */
+  top:50%;
   left:15px;
   color: $MainColor;
 }
@@ -296,13 +299,13 @@ input {
 .footer_logo02 {
   width: 171px;
   display:block;
-  cursor: pointer;
+  
 }
 .footer_icon img {
   width: 32px;
   height: 32px;
   display:inline-block;
-  cursor: pointer;
+  
 }
 .footer_contact {
   margin-top:100px;
@@ -358,7 +361,7 @@ input {
   .Logo{
     width: 114px;
     height: 26px;
-    background-image: url(/static/images/logo_img/logotype-sm-dark.svg);
+    background-image: url(./assets/static/images/logo_img/logotype-sm-dark.svg);
   }
   .mobile{
     display:$display_s;

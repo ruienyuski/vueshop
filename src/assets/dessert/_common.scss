@@ -49,9 +49,9 @@ a:hover {
    input,select,textarea {
      border-radius: 0;
    }
-   label {
-     display: none;
-    }
+  //  label {
+  //    display: none;
+  //   }
   ::placeholder {
     opacity: 0.5;
   }
@@ -74,7 +74,7 @@ a:hover {
   font-size: $fz_m;
   font-weight: bold;
   display:block;
-  cursor: pointer;
+  
 
   &:hover {
     background-color:darken($ThirdColor, 10%);
