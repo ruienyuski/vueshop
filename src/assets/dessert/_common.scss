@@ -1,9 +1,9 @@
 /*color*/
-$MainColor:#3F5D45;
-$SecondColor:#ffffff;
-$ThirdColor:#FFE180;
-$ForthColor:#EAF0ED;
-$OtherColor:#8DA291;
+// $MainColor:#3F5D45;
+// $SecondColor:#ffffff;
+// $ThirdColor:#FFE180;
+// $ForthColor:#EAF0ED;
+// $OtherColor:#8DA291;
 /*font-size*/
 $fz_s:18px;
 $fz_sm:20px;
@@ -38,7 +38,7 @@ $display_n:none;
 }
 
 a {
-  color: $MainColor;
+  color: $primary;
   text-decoration: none;
 }
 
@@ -55,7 +55,7 @@ a:hover {
   ::placeholder {
     opacity: 0.5;
   }
-  
+
 }
 
 
@@ -68,22 +68,22 @@ a:hover {
   padding:0;
 }
 .login_btn_bg,.cart_btn_bg,.check_btn_bg,.success_btn_bg {
-  background-color: $ThirdColor;
-  color: $MainColor;
+  background-color: $warning;
+  color: $primary;
   line-height: 1.8;
   font-size: $fz_m;
   font-weight: bold;
   display:block;
-  
+
 
   &:hover {
-    background-color:darken($ThirdColor, 10%);
+    background-color:darken($warning, 10%);
   }
 }
 .check_btn_bg > .btn, .login_btn_bg > .btn {
   border:none;
   background:none;
-  color: $MainColor;
+  color: $primary;
   line-height: 1.8;
   font-size: $fz_m;
   font-weight: bold;
@@ -138,16 +138,16 @@ a:hover {
   padding: 10px;
   border-radius: 50%;
   display:block;
-  background-color:$SecondColor;
-  color:$MainColor;  
+  background-color:$whiteColor;
+  color:$primary;
   &:hover{
-    background-color: $MainColor;
-    color:$SecondColor;
+    background-color: $primary;
+    color:$whiteColor;
   }
 }
 
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
   .container_mb{
     margin-bottom: 0px;
   }

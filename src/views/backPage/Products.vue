@@ -34,7 +34,7 @@
             <button
             class="btn btn-outline-primary btn-sm" @click="openModal(false,item)">編輯</button>
             <button
-            class="btn btn-outline-primary btn-sm" @click="DelModal(item)">刪除</button>
+            class="btn btn-outline-primary btn-sm" @click="delModal(item)">刪除</button>
           </td>
         </tr>
       </tbody>
@@ -116,7 +116,7 @@
                   <div class="col-md-12 mb-3">
                     <label for="titleInput">標題</label>
                     <input type="text"
-                     class="form-control"
+                      class="form-control"
                       id="titleInput"
                       v-model="tempProduct.title"
                       placeholder="請輸入標題">
@@ -263,7 +263,7 @@ export default {
       }
       $('#productModal').modal('show');
     },
-    DelModal(item) {
+    delModal(item) {
       this.tempProduct = item;
       $('#deleteModal').modal('show');
     },

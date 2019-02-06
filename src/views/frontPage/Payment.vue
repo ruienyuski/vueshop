@@ -12,7 +12,7 @@
       <form @submit.prevent = "payOrder" v-else>
         <div class=" row justify-content-center">
           <div class="check_order_width col-md-8 ">
-            <div class=" p-3 text-center check_title">訂單內容</div>
+            <div class=" p-3 text-center check_list_title">訂單內容</div>
             <div class=" my-3 p-3">
               <table class="table text-dark">
                 <thead>
@@ -42,7 +42,7 @@
             </div>
           </div>
           <div class="check_order_width col-md-8 ">
-            <div class=" p-3 text-center check_title">付款內容</div>
+            <div class=" p-3 text-center check_list_title">付款內容</div>
             <div class=" my-3 p-3">
                 <table class="table text-dark ">
                   <tbody>

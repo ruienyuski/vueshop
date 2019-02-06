@@ -64,7 +64,12 @@
               <div class="h4" v-if="product.price">現在只要 {{ product.price }} 元</div>
             </div>
             <select name="" v-model="product.num"  class="form-control mt-3">
-              <option :value="num" v-for="num in 10" :key="num">選購{{num}}{{product.unit}}</option>
+              <option
+              :value="num"
+              v-for="num in 10"
+              :key="num">
+              選購{{num}}{{product.unit}}
+              </option>
             </select>
           </div>
           <div class="modal-footer">
@@ -281,6 +286,7 @@ export default {
         vm.product = response.data.product;
         $('#productModal').modal('show');
         vm.status.loadingItem = '';
+        vm.product.num = 1;
       });
     },
     addtoCart(id, qty = 1) {

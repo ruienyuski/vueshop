@@ -34,7 +34,7 @@
             <button
             class="btn btn-outline-primary btn-sm" @click="openModal(false,item)">編輯</button>
             <button
-            class="btn btn-outline-primary btn-sm" @click="DelModal(item)">刪除</button>
+            class="btn btn-outline-primary btn-sm" @click="delModal(item)">刪除</button>
           </td>
         </tr>
       </tbody>
@@ -227,7 +227,7 @@ export default {
       });
     },
 
-    DelModal(item) {
+    delModal(item) {
       this.tempCoupons = item;
       $('#deleteModal').modal('show');
     },

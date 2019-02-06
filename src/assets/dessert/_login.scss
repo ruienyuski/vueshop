@@ -5,13 +5,13 @@
   overflow:hidden;
 }
 .login_bg {
-  background-color: $MainColor;
+  background-color: $primary;
   border:0;
   border-radius: 0;
   h5.card-title {
     line-height: 2.5;
     font-size: $fz_ml;
-    color:$ForthColor;
+    color:$lighter;
   }
   .input_icon {
     margin-bottom: 1.5em;
@@ -26,20 +26,20 @@
 }
 
 .checkbox_style {
-  color:$SecondColor;
+  color:$whiteColor;
   text-align: left;
 }
 
 
 
 .social_bg {
-  background-color: $ForthColor;
+  background-color: $lighter;
   border:0;
   border-radius: 0;
   margin-top: 20px;
 
   h5.card-title {
-    color:$OtherColor;
+    color:$success;
     font-weight: 100;
     font-size: $fz_m;
     line-height: 2.3;
@@ -53,18 +53,18 @@
   .btn_bg {
     margin-bottom: 1em;
     color: #212529;
-    background-color: $SecondColor;
-    border-color: $SecondColor;
+    background-color: $whiteColor;
+    border-color: $whiteColor;
     border-radius: 0;
     height: calc(2.875rem + 2px);
     &:hover {
-      background-color: $MainColor;
+      background-color: $primary;
     }
   }
   .btn_bg:not(:disabled):not(.disabled).active, .btn_bg:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
     color: #212529;
-    background-color: $SecondColor;
-    border-color: $SecondColor;
+    background-color: $whiteColor;
+    border-color: $whiteColor;
   }
 }
 .social_icon {
@@ -77,18 +77,18 @@
     padding:0;
   }
   .mobile_social_btn_bg {
-    background-color: $ForthColor;
+    background-color: $lighter;
     padding: 25px 0;
   }
   .btn_bg {
     width: 105px;
     height: 56px;
     border-radius: 0;
-    background-color: $SecondColor;
-    border-color: $SecondColor;
+    background-color: $whiteColor;
+    border-color: $whiteColor;
     margin: 0 1px ;
     &:hover {
-      background-color: $MainColor;
+      background-color: $primary;
     }
   }
   .social_icon {

@@ -5,7 +5,7 @@
   width: 100%;
   height: 496px;
   padding: 30px 20px 0 20px ;
-  color:$MainColor;
+  color:$primary;
   .flex_vertical_txt div {
     div {
       margin-top:20px;
@@ -17,24 +17,24 @@
   border-radius: 0;
   text-align: center;
   .list-style {
-    color:$MainColor;
+    color:$primary;
     font-weight: bold;
     font-size: $fz_m;
     display: block;
-    
+
   }
   .select {
-    background-color: $ForthColor;
+    background-color: $lighter;
   }
   .list-style:first-child {
     border-radius: 0;
-    color:$SecondColor;
+    color:$whiteColor;
   }
   .list-style:last-child {
     border-radius: 0;
   }
   .active {
-    background-color: $MainColor;
+    background-color: $primary;
   }
 }
 
@@ -46,16 +46,16 @@
     width: 100%;
   }
 
-} 
+}
 .product_page {
   .page-item.active .page-link {
     z-index: 1;
     color: #fff;
-    background-color: $MainColor;
-    border-color: $MainColor;
+    background-color: $primary;
+    border-color: $primary;
   }
   .page-link {
-    color: $MainColor;
+    color: $primary;
 
   }
 }

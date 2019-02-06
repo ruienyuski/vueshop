@@ -30,8 +30,10 @@
               <hr>購買數量:
               <div class="input-group my-3">
                 <select v-model="product.num" class="form-control mr-1">
-                  <option :value="num" v-for="num in 10" :key="num">
-                      選購{{num}}{{product.unit}}
+                  <option :value="num"
+                  v-for="num in 10"
+                  :key="num">
+                  選購{{num}}{{product.unit}}
                   </option>
                 </select>
                 <button
@@ -83,6 +85,7 @@ export default {
       }/product/${id}`;
       this.$http.get(api).then((response) => {
         vm.product = response.data.product;
+        vm.product.num = 1;
       });
     },
     addtoCart(id, qty = 1) {

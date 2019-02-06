@@ -4,8 +4,8 @@
 .cart_title {
   font-size: $fz_m;
   font-weight: bold;
-  color:$MainColor;
-  background-color: $ForthColor;
+  color:$primary;
+  background-color: $lighter;
 }
 
 .cart_list {
@@ -24,7 +24,7 @@
   font-size: $fz_sm;
 }
 .cart_product_item {
-  color:$MainColor;
+  color:$primary;
   display:block;
 }
 
@@ -44,7 +44,7 @@
 }
 .product_price {
   font-size: $fz_sm;
-  color:$MainColor;
+  color:$primary;
   font-weight: bold;
 }
 
@@ -59,7 +59,7 @@
 
 
 .order_bg {
-  background-color: $MainColor;
+  background-color: $primary;
   border:0;
   border-radius: 0;
   .card-body {
@@ -68,21 +68,21 @@
   .card-head {
     line-height: 2.5;
     font-size: $fz_m;
-    color:$ForthColor;
+    color:$lighter;
     font-weight: bold;
-    border-bottom:1px solid $ForthColor;
+    border-bottom:1px solid $lighter;
     width: 90%;
     margin: 0 auto;
   }
   .order_sale {
-    color:darken($ThirdColor,20%);
+    color:darken($warning,20%);
   }
   .border_bottom {
-    border-bottom:1px solid $SecondColor;
+    border-bottom:1px solid $whiteColor;
     margin-bottom: 10px;
   }
   .table {
-    color:$ForthColor;
+    color:$lighter;
 
     td {
       padding: 5px 0.75em;
@@ -118,14 +118,14 @@
      font-size: 1.25rem;
      line-height: 1.5;
     }
-   
+
    }
 
    .mobile_product_price {
      display:block;
     //  text-align: right;
      font-size: $fz_sm;
-     color:$MainColor;
+     color:$primary;
      font-weight: bold;
    }
 
@@ -135,19 +135,19 @@
   .product_price {
     display:none;
   }
-  
+
   .order_bg {
     border:0;
-    background-color: $SecondColor;
+    background-color: $whiteColor;
     .card-head {
-      background-color: $ForthColor;
-      color:$MainColor;
+      background-color: $lighter;
+      color:$primary;
       width: 100%;
       margin: 0 auto;
       border:0;
     }
     .card-body {
-      background-color: $SecondColor;
+      background-color: $whiteColor;
       width: 93%;
       margin: 0 auto;
     }
@@ -156,7 +156,7 @@
     }
 
    .table {
-      color: $MainColor;
+      color: $primary;
     }
     .card-footer {
       padding: .75rem 0;

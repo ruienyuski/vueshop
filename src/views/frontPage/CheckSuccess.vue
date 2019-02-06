@@ -9,10 +9,13 @@
             <div class="step in done done_color2"></div>
           </div> -->
           <div class="text-center">
-              <img src="@/assets/static/images/logo_img/lg-payok.svg"
-              alt="" class="img-fluid fin_text">
+              <img
+              src="@/assets/static/images/logo_img/lg-payok.svg"
+              alt=""
+              class="img-fluid fin_text">
           </div>
-          <button class="success_btn_bg mt-5 desktop border-0 radius-0"
+          <button
+          class="success_btn_bg mt-5 desktop border-0 radius-0"
           type="button"
           @click="finish">
             繼續逛逛

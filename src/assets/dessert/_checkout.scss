@@ -1,8 +1,8 @@
 /*checkout-1.html*/
 
 .check_bg {
-  background-color: $MainColor;
-  color: $ForthColor;
+  background-color: $primary;
+  color: $lighter;
   border:0;
   border-radius: 0;
   .card-head {
@@ -28,21 +28,21 @@
   margin: 0 auto;
   width: 12rem;
   height: auto;
-  background: $MainColor;
-  border-bottom: 1px solid $ForthColor;
+  background: $primary;
+  border-bottom: 1px solid $lighter;
  }
 
 .progress > .step {
   width: 20px;
   height: 20px;
-  background: $MainColor;
-  border: 1px solid $ForthColor;
+  background: $primary;
+  border: 1px solid $lighter;
   border-radius: 20px;
   position: absolute;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-self: center; 
+  align-self: center;
 }
 
 .progress > .step:nth-child(2) {
@@ -54,25 +54,25 @@
 
 
 .progress > .in {
-  border: 1px solid $ForthColor; 
+  border: 1px solid $lighter;
 }
 
 .progress > .in:after {
   content: '';
   width: 12px;
   height: 12px;
-  background: $ForthColor;
+  background: $lighter;
   display: block;
   border-radius: 12px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-self: center; 
+  align-self: center;
 }
 
 
 .progress > .in:first-child:before {
-  display: none; 
+  display: none;
 }
 
 .progress > .in.done:after {
@@ -82,57 +82,57 @@
   content: "\f00c";
   width: 20px;
   height: 20px;
-  color:$MainColor;
+  color:$primary;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-self: center; 
+  align-self: center;
   align-items: center;
 }
 
   /*進度條 end*/
 
   .check_order_width {
-   border:1px solid  $ForthColor;
+   border:1px solid  $lighter;
    margin-bottom: 20px;
    margin-left: 20px;
-   color:$OtherColor;
+   color:$success;
   }
 
   .check_product_item{
-    color:$OtherColor;
+    color:$success;
     display:block;
-    
+
     .product_price {
-      color:$OtherColor;
+      color:$success;
     }
   }
-  .check_title {
+  .check_list_title {
     font-size: $fz_m;
     font-weight: bold;
-    color:$OtherColor;
-    background-color: $ForthColor;
+    color:$success;
+    background-color: $lighter;
   }
-  .checktitle {
+  .check_step_title {
     font-size: $fz_ml;
-    color:$ForthColor;
+    color:$lighter;
   }
 
   .check_product_img {
     max-width: 120px;
     height: 80px;
     display:block;
-    
+
   }
   .check_product_item .product_price {
       font-size: $fz_sm;
   }
   @media (max-width: 768px) {
     .check_order_width {
-      border:1px solid  $ForthColor;
+      border:1px solid  $lighter;
       margin-top: 20px;
       margin-left: 0px;
-      color:$OtherColor;
+      color:$success;
      }
   }
 
@@ -140,7 +140,7 @@
     .check_bg .card-body {
       padding: 0 20px;
   }
-  .checktitle {
+  .check_step_title {
     text-align: left;
     padding: 0 20px;
   }
@@ -149,10 +149,10 @@
     }
     .progress > .step:nth-child(2) {
       margin-left: 3.5rem; }
-    
+
     .progress > .step:nth-child(3) {
       margin-left: 7rem; }
-    
+
    }
 
    /*checkout-2.html*/
@@ -161,32 +161,32 @@
     position: absolute;
     top: calc(50% - 0.5em);/* Keep icon in center of input, regardless of the input height */
     right:15px;
-    color: $MainColor;
+    color: $primary;
   }
  /*checkout-3.html*/
   .switch {
     display:flex;
     justify-content: space-between;
-    
+
     margin-bottom: 15px;
     .item {
       width: 190px;
       height: 56px;
       border-radius: 0;
       background: transparent;
-      border-color:$ForthColor;
-      border: 1px solid $ForthColor;
+      border-color:$lighter;
+      border: 1px solid $lighter;
       text-align: center;
       line-height: 56px;
       font-size: $fz_sm;
     }
     .item a{
-      color: $ForthColor;
+      color: $lighter;
       text-decoration: none;
     }
     .item.active ,.item.active a{
-      background:$ForthColor;
-      color:$MainColor;
+      background:$lighter;
+      color:$primary;
     }
   }
 
@@ -199,19 +199,19 @@
     width: 65%;
   }
   .progress_color2 {
-    border-bottom: 1px solid $MainColor;
+    border-bottom: 1px solid $primary;
   }
   .progress > .done_color2 {
-   background-color: $MainColor;
-   border:1px solid $MainColor;
-   color:$ForthColor;
+   background-color: $primary;
+   border:1px solid $primary;
+   color:$lighter;
   }
   .progress > .done_color2:after {
-    background-color: $MainColor;
+    background-color: $primary;
   }
 
   .progress > .in.done.done_color2:after {
-    color:$ForthColor;
+    color:$lighter;
   }
 
   .success_btn_bg {
@@ -221,7 +221,7 @@
     text-align: center;
     margin: 0 auto;
     a {
-      color: $MainColor;
+      color: $primary;
       text-decoration: none;
     }
   }
@@ -247,11 +247,11 @@
       line-height: 65px;
       text-align: center;
       margin: 0 auto;
-      background-color: $ThirdColor;
-      color: $MainColor;
+      background-color: $warning;
+      color: $primary;
       font-size: $fz_m;
       font-weight: bold;
       display:block;
-      
+
     }
   }

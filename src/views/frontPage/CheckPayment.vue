@@ -21,7 +21,7 @@
             </div>
 
             <button
-            class="btn cart-footer check_btn_bg"
+            class="btn cart-footer check_btn_bg border-0 rounded-0"
             type="submit"
             @click="nextStep">
             送出

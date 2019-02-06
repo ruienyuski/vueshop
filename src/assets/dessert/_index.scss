@@ -8,10 +8,10 @@
   text-indent: -99999px;
   background-repeat: no-repeat;
   display:block;
-  
+
 }
 .navbar-light .hamger{
-  color:$MainColor;
+  color:$primary;
 }
 .hamger {
   border: 0;
@@ -22,7 +22,7 @@
 }
 .menu .nav-item .nav-link {
   font-size: $fz_s;
-  color:$MainColor;
+  color:$primary;
   margin: 20px 40px 0 0;
   font-weight: bold;
 
@@ -32,7 +32,7 @@
   display:$display_n;
 }
 .desktop{
-  color: $MainColor;
+  color: $primary;
   display: $display_s;
 }
 
@@ -97,7 +97,7 @@
 /*毛玻璃背景效果 end*/
 
 .salemenu_item{
-  background-color: $MainColor;
+  background-color: $primary;
   writing-mode: vertical-lr;
   // padding: 80px 125px;
   display:inline-block;
@@ -105,23 +105,22 @@
   opacity: 0.8;
 
   &:hover {
-    background-color: $ThirdColor;
+    background-color: $warning;
     span {
-    color:$MainColor;
+    color:$primary;
     font-weight: bold;
     }
   }
 
   span{
     font-size: $fz_m;
-    color:$SecondColor;
+    color:$whiteColor;
     letter-spacing: 5px;
-
   }
 }
 .salemenu_item_border {
-  border-left: 1px solid $SecondColor;
-  border-right: 1px solid $SecondColor;
+  border-left: 1px solid $whiteColor;
+  border-right: 1px solid $whiteColor;
 }
 
 
@@ -139,14 +138,14 @@
 }
 .home_ad_bg {
   height: 420px;
-  background-color: $ForthColor;
+  background-color: $lighter;
 }
 
 .home_ad_txt {
   writing-mode: vertical-rl;
   .home_ad_p_txt,.home_ad_p_txt2 {
     width: 100%;
-    color:$OtherColor;
+    color:$success;
     font-size: $fz_s;
     p{
       font-weight: normal;
@@ -162,7 +161,7 @@
   margin-top:20px;
 }
 .home_ad_txt .h3 {
-  color:$MainColor;
+  color:$primary;
   font-size: $fz_l;
   margin-top: -40px;
 
@@ -188,25 +187,25 @@
   width: 100%;
   height: 315px;
   display:block;
-  
+
 }
 .product_card_product_txt {
-  color:$MainColor;
+  color:$primary;
   font-size: $fz_sm;
   .text_bold {
     font-weight: bold;
   }
 }
 .product_product_border {
-  border-right: 1px solid $ForthColor;
+  border-right: 1px solid $lighter;
 }
 .card_footer_bg {
-  background-color:$ForthColor ;
-  color: $MainColor;
+  background-color:$lighter;
+  color: $primary;
   font-weight: bold;
   font-size: $fz_s;
   display:block;
-  
+
 
 }
 
@@ -214,28 +213,28 @@
   position: absolute;
   width: 36px;
   height: 106px;
-  color:$SecondColor;
+  color:$whiteColor;
   padding: 10px;
   line-height: 1.3;
   left:20px;
   top:0;
-  
+
 }
 .product_today {
-  background-color: $MainColor;
+  background-color: $primary;
 }
 
 .product_NEW {
-  background-color: $ThirdColor;
-  color: $MainColor;
+  background-color: $warning;
+  color: $primary;
   font-weight: 700;
 }
 .product_like {
   position: absolute;
-  // color: $MainColor;
+  // color: $primary;
   right: 20px;
   top:20px;
-  
+
 }
 .home_sale {
   display: flex;
@@ -252,8 +251,8 @@
 
 }
 .footer_bg01 {
-  background-color: $MainColor;
-  color:$SecondColor;
+  background-color: $primary;
+  color:$whiteColor;
   padding: 40px 0;
   margin: 0;
   width: 100%;
@@ -271,7 +270,7 @@
   // top: calc(50% - 0.5em);/* Keep icon in center of input, regardless of the input height */
   top:50%;
   left:15px;
-  color: $MainColor;
+  color: $primary;
 }
 
 .footer_input {
@@ -283,7 +282,7 @@ input {
   border: none;
 }
 .btn_send {
-  background-color: $ThirdColor;
+  background-color: $warning;
   border: 0;
   border-radius:0;
   width: 60px;
@@ -292,20 +291,20 @@ input {
   }
 }
 .footer_bg02 {
-  background-color: $ForthColor;
+  background-color: $lighter;
   padding: 30px 0 20px 0;
-  color:$MainColor;
+  color:$primary;
 }
 .footer_logo02 {
   width: 171px;
   display:block;
-  
+
 }
 .footer_icon img {
   width: 32px;
   height: 32px;
   display:inline-block;
-  
+
 }
 .footer_contact {
   margin-top:100px;
@@ -320,7 +319,7 @@ input {
 
 @media (max-width:768px) {
   .salemenu_item{
-    padding: 3rem 50%;
+    padding: 3rem 6rem;
     width: 100%;
   }
   .ipad{
@@ -329,10 +328,10 @@ input {
   .desktop{
     display: $display_n;
   }
- 
+
   .menu .nav-item {
     padding: 10px 0;
-    border-bottom: 1px dashed $MainColor;
+    border-bottom: 1px dashed $primary;
     text-align:center;
     .nav-link {margin: 0;}
     .nav-link > .desktop {
@@ -365,7 +364,7 @@ input {
   }
   .mobile{
     display:$display_s;
-    color:$MainColor;
+    color:$primary;
   }
    .desktop{
     display: $display_n;
@@ -376,8 +375,11 @@ input {
 
   .salemenu_item{
     // padding: 40px 35px;
-    padding: 3rem 23%;
+    padding: 3rem ;
     width: 100%;
+    span{
+      font-size: $fz_sm;
+    }
   }
   .content {
     margin: 20px 0;

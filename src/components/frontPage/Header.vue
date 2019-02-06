@@ -63,7 +63,7 @@ export default {
     top() {
       $('html,body').animate(
       // eslint-disable-next-line
-        {scrollTop: 0},700);
+        {scrollTop: 0}, 700);
     },
   },
 };

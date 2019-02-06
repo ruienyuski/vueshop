@@ -6,7 +6,7 @@
           <form @submit.prevent="createOrder">
             <div class="card text-center check_bg">
               <div class="card-head row justify-content-between">
-                <div class="checktitle col-lg-3 col-5">運送</div>
+                <div class="check_step_title col-lg-3 col-5">運送</div>
                 <!-- <div class="col-lg-6 col-6 align-self-center">
                   <div class="progress">
                     <div class="step in"></div>
@@ -21,7 +21,7 @@
                   <div class="form-group col-lg-12 col-12">
                     <label for="name">姓名</label>
                     <input
-                      type="name"
+                      type="text"
                       v-model="form.user.name"
                       v-validate="'required'"
                       class="form-control form-control-lg"
@@ -103,7 +103,7 @@
 
         <div class="col-lg-4 col-12 align-items-start desktop">
           <div class="check_order_width">
-            <div class="p-3 text-center check_title">訂單摘要</div>
+            <div class="p-3 text-center check_list_title">訂單摘要</div>
             <table class="table table-borderless">
               <tr>
                 <td class="text-left">小計</td>
@@ -120,7 +120,7 @@
             </table>
           </div>
           <div class="check_order_width">
-            <div class="p-3 text-center check_title">購物清單</div>
+            <div class="p-3 text-center check_list_title">購物清單</div>
             <div class="my-3" v-for="item in cart.carts" :key="item.id">
               <div class="row justify-content-around" >
                 <div
